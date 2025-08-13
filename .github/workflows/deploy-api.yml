@@ -26,6 +26,11 @@ jobs:
     runs-on: ubuntu-latest
     environment: production  # Use GitHub environment for additional protection
     name: Build and Deploy
+    permissions:
+      contents: read
+      actions: read
+      checks: write
+    continue-on-error: true
 
     # steps that will be executed for the job
     steps:
