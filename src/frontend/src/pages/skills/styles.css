@@ -1,0 +1,603 @@
+/* here is where all of the styling for your skills page will live */
+
+.skills-container {
+    /* Container styling with padding and centered content */
+    max-width: 2000px;
+    margin: 0 auto;
+    padding: 2rem;
+    font-family: 'Arial', sans-serif;
+    background-color: #ffffff;
+    min-height: 100vh;
+}
+
+/* Skills Display Section */
+.skills-display {
+    margin-bottom: 2rem;
+    width: 100%;
+}
+
+.skills-display h2 {
+    text-align: center;
+    color: #4f0b45;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    border-bottom: 3px solid #4f0b45;
+    padding-bottom: 0.5rem;
+    display: block;
+    width: 100%;
+}
+
+/* Post-it board */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1.5rem;
+    padding: 1rem;
+    max-width: 1400px;
+    margin: 0 auto;
+    justify-items: center;
+}
+
+.skills-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1rem;
+    margin: 0 auto;
+}
+
+.skill-item {
+    margin-bottom: 0;
+}
+
+/* skill card styling*/
+.skill-card {
+    border-radius: 8px;
+    padding: 1rem;
+    margin: 0.5rem;
+    width: 100%;
+    max-width: 250px;
+    min-height: 200px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease;
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Tape effect */
+.skill-card::before,
+.skill-card::after {
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 16px;
+    background: #f8e38f;
+    border-radius: 4px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+    z-index: 2;
+}
+
+.skill-card::before {
+    top: -10px;
+    left: -10px;
+    transform: rotate(-12deg);
+}
+
+.skill-card::after {
+    top: -10px;
+    right: -10px;
+    transform: rotate(12deg);
+}
+
+/* First row: -1, 1, -1, 1 */
+.skill-card:nth-child(8n+1),
+.skill-card:nth-child(8n+6) {
+    transform: rotate(-1deg);
+    background: #f7e9ef;
+    border: 1px solid #4f0b45;
+}
+.skill-card:nth-child(8n+2),
+.skill-card:nth-child(8n+7) {
+    background: #e9f7f7;
+    border: 1px solid #4f0b45;
+    transform: rotate(1deg);
+}
+.skill-card:nth-child(8n+3),
+.skill-card:nth-child(8n+8) {
+    transform: rotate(-1deg);
+    background: #f7e9ef;
+    border: 1px solid #4f0b45;
+}
+.skill-card:nth-child(8n+4),
+.skill-card:nth-child(8n+5) {
+    background: #e9f7f7;
+    border: 1px solid #4f0b45;
+    transform: rotate(1deg);
+}
+
+
+/* Hover effect */
+.skill-card:hover {
+    transform: rotate(0deg) translateY(-5px) scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+}
+
+.skill-title {
+    color: #2e0338;
+    font-size: 1.1rem;
+    margin-bottom: 0.75rem;
+    font-weight: bold;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    padding-bottom: 0.5rem;
+}
+
+.skill-level {
+    margin-bottom: 0.75rem;
+    font-size: 0.85rem;
+}
+
+.skill-level strong {
+    color: #2e0338;
+    font-weight: bold;
+}
+
+.skill-description {
+    color: #555;
+    line-height: 1.4;
+    font-size: 0.8rem;
+    margin-bottom: 0.75rem;
+}
+
+.skill-description strong {
+    color: #2e0338;
+    font-weight: bold;
+}
+
+/* Skills Form */
+.skills-form-section {
+    background: #f7e9ef;
+    border-top: 3px solid #4f0b45;
+    border-radius: 8px;
+    padding: 1.5rem 2rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    margin-top: 2rem;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.skills-form-section h2 {
+    text-align: center;
+    color: #2e0338;
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    margin-top: 0;
+}
+
+.skill-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr auto;
+    gap: 1.5rem;
+    align-items: start;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    font-weight: bold;
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    padding: 0.75rem;
+    border: 2px solid #4f0b45;
+    border-radius: 6px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    font-family: inherit;
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 80px;
+    max-height: 120px;
+}
+
+.submit-btn {
+    background: #4f0b45;
+    color: white;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 6px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    height: fit-content;
+    white-space: nowrap;
+}
+
+.submit-btn:hover {
+    background: #6b063f;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .skills-container {
+        padding: 1rem;
+    }
+
+    .skills-header {
+        font-size: 2rem;
+    }
+
+    .skill-card {
+        padding: 1rem;
+    }
+
+    .skills-form-section {
+        padding: 1.5rem;
+    }
+}
+
+/* Skills List Styling */
+.skills-list {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.skill-item {
+    margin-bottom: 0;
+}
+
+.skill-item .skill-card:hover {
+    transform: rotate(0deg) translateY(-5px) scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+}
+
+.skill-item .skill-title {
+    color: #2e0338;
+    font-size: 1.1rem;
+    margin-bottom: 0.75rem;
+    font-weight: bold;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    padding-bottom: 0.5rem;
+}
+
+.skill-item .skill-level {
+    margin-bottom: 0.75rem;
+    font-size: 0.85rem;
+}
+
+.skill-item .skill-level strong {
+    color: #2e0338;
+    font-weight: bold;
+}
+
+.skill-item .skill-description {
+    color: #555;
+    line-height: 1.4;
+    font-size: 0.8rem;
+    margin-bottom: 0.75rem;
+}
+
+.skill-item .skill-description strong {
+    color: #2e0338;
+    font-weight: bold;
+}
+
+/* Action buttons  */
+.skill-actions {
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 0.75rem;
+    padding-top: 0.75rem;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.edit-btn,
+.delete-btn {
+    padding: 0.25rem 0.5rem;
+    border: none;
+    border-radius: 3px;
+    font-size: 0.75rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    flex: 1;
+}
+
+.edit-btn {
+    background-color: #f9a9ed;
+    color: white;
+}
+
+.edit-btn:hover {
+    background-color: #2980b9;
+    transform: translateY(-1px);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.delete-btn {
+    background-color: #4f0b45;
+    color: white;
+}
+
+.delete-btn:hover {
+    background-color: #c0392b;
+    transform: translateY(-1px);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive design for post-it layout */
+@media (max-width: 768px) {
+    .skills-container {
+        padding: 1rem;
+    }
+
+    .skills-header {
+        font-size: 2rem;
+    }
+
+    .skills-list {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        gap: 0.75rem;
+    }
+
+    .skill-form {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    
+    .skills-form-section {
+        padding: 1rem;
+        margin-top: 1.5rem;
+    }
+    
+    .form-group label {
+        font-size: 0.9rem;
+    }
+    
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+        padding: 0.6rem;
+        font-size: 0.95rem;
+    }
+}
+
+
+/* Skill card edit/delete functionality */
+.skill-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 0.75rem;
+}
+
+.skill-display-mode {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.skill-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.skill-actions {
+    display: flex;
+    gap: 0.5rem;
+    margin-top: auto;
+    padding-top: 0.75rem;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+/* Show buttons on card hover */
+.skill-card:hover .skill-actions {
+    opacity: 1;
+    visibility: visible;
+}
+
+.edit-btn, .delete-btn, .save-btn, .cancel-btn {
+    background: none;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    padding: 0.25rem;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.edit-btn:hover {
+    background-color: rgba(79, 11, 69, 0.1);
+}
+
+.delete-btn:hover {
+    background-color: rgba(220, 53, 69, 0.1);
+}
+
+.save-btn:hover {
+    background-color: rgba(40, 167, 69, 0.1);
+}
+
+.cancel-btn:hover {
+    background-color: rgba(220, 53, 69, 0.1);
+}
+
+/* Edit mode styling */
+.skill-edit-mode {
+    width: 100%;
+}
+
+.edit-group {
+    margin-bottom: 0.75rem;
+}
+
+.edit-group label {
+    display: block;
+    font-weight: bold;
+    color: #2e0338;
+    margin-bottom: 0.25rem;
+    font-size: 0.8rem;
+}
+
+.edit-input, .edit-select, .edit-textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    font-family: inherit;
+    background-color: white;
+}
+
+.edit-input:focus, .edit-select:focus, .edit-textarea:focus {
+    outline: none;
+    border-color: #4f0b45;
+    box-shadow: 0 0 0 2px rgba(79, 11, 69, 0.1);
+}
+
+.edit-textarea {
+    resize: vertical;
+    min-height: 60px;
+}
+
+.edit-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+.skill-display-mode .skill-title {
+    margin: 0;
+    flex: 1;
+}
+
+/* --- Dark Mode Starter --- */
+.dark-mode {
+  background-color: #181824;
+  color: #f1f1f1;
+}
+.dark-mode .skills-container {
+  background-color: #181824;
+  color: #f1f1f1;
+}
+.dark-mode .skills-display h2,
+.dark-mode .skills-form-section h2 {
+  color: #e0e0ff;
+  border-bottom-color: #7c3aed;
+}
+
+.dark-mode .skill-title {
+  color: #e0e0ff;
+}
+
+.dark-mode .skill-description strong {
+    color: #d0b5ff;
+}
+
+.dark-mode .skill-level {
+  color: #ffffff;
+}
+
+.dark-mode .skill-level strong {
+    color: #d0b5ff;
+}
+
+.dark-mode .skill-description {
+  color: #ffffff;
+}
+
+.dark-mode .skill-card {
+  background: #232336;
+  color: #f1f1f1;
+  border: 1px solid #7c3aed;
+}
+.dark-mode .skill-card:nth-child(even) {
+  background: #646493;
+  border: 1px solid #7c3aed;
+}
+.dark-mode .skill-card:nth-child(odd) {
+  background: #31313e;
+  border: 1px solid #7c3aed;
+}
+.dark-mode .skills-form-section {
+  background: #232336;
+  border-top: 3px solid #7c3aed;
+  color: #fff;
+}
+
+.dark-mode .form-group input,
+.dark-mode .form-group select,
+.dark-mode .form-group textarea {
+  background: #232336;
+  color: #ffffff;
+  border: 2px solid #7c3aed;
+}
+
+.dark-mode .form-group label,
+.dark-mode .form-group input,
+.dark-mode .form-group select,
+.dark-mode .form-group textarea,
+.dark-mode .form-group input::placeholder,
+.dark-mode .form-group textarea::placeholder {
+  color: #fff !important;
+}
+
+
+.dark-mode .submit-btn {
+  background: #7c3aed;
+  color: #fff;
+}
+.dark-mode .submit-btn:hover {
+  background: #a78bfa;
+}
+.dark-mode .edit-btn {
+  background-color: #7c3aed;
+}
+.dark-mode .edit-btn:hover {
+  background-color: #a78bfa;
+}
+.dark-mode .delete-btn {
+  background-color: #7c3aed;
+  color: #ffb4b4;
+}
+.dark-mode .delete-btn:hover {
+  background-color: #a78bfa;
+  color: #fff;
+}
+/* --- End Dark Mode Starter --- */
