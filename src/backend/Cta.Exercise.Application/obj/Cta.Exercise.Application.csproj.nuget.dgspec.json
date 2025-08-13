@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\CTA Folders\\cta-csharp-exercise-lv\\src\\Cta.Exercise.Application\\Cta.Exercise.Application.csproj": {}
+    "C:\\CTA Folders\\CTA-resume\\src\\backend\\Cta.Exercise.Application\\Cta.Exercise.Application.csproj": {}
   },
   "projects": {
-    "C:\\CTA Folders\\cta-csharp-exercise-lv\\src\\Cta.Exercise.Application\\Cta.Exercise.Application.csproj": {
+    "C:\\CTA Folders\\CTA-resume\\src\\backend\\Cta.Exercise.Application\\Cta.Exercise.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\CTA Folders\\cta-csharp-exercise-lv\\src\\Cta.Exercise.Application\\Cta.Exercise.Application.csproj",
+        "projectUniqueName": "C:\\CTA Folders\\CTA-resume\\src\\backend\\Cta.Exercise.Application\\Cta.Exercise.Application.csproj",
         "projectName": "Cta.Exercise.Application",
-        "projectPath": "C:\\CTA Folders\\cta-csharp-exercise-lv\\src\\Cta.Exercise.Application\\Cta.Exercise.Application.csproj",
+        "projectPath": "C:\\CTA Folders\\CTA-resume\\src\\backend\\Cta.Exercise.Application\\Cta.Exercise.Application.csproj",
         "packagesPath": "C:\\Users\\297411\\.nuget\\packages\\",
-        "outputPath": "C:\\CTA Folders\\cta-csharp-exercise-lv\\src\\Cta.Exercise.Application\\obj\\",
+        "outputPath": "C:\\CTA Folders\\CTA-resume\\src\\backend\\Cta.Exercise.Application\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -32,8 +32,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\CTA Folders\\cta-csharp-exercise-lv\\src\\Cta.Exercise.Core\\Cta.Exercise.Core.csproj": {
-                "projectPath": "C:\\CTA Folders\\cta-csharp-exercise-lv\\src\\Cta.Exercise.Core\\Cta.Exercise.Core.csproj"
+              "C:\\CTA Folders\\CTA-resume\\src\\backend\\Cta.Exercise.Core\\Cta.Exercise.Core.csproj": {
+                "projectPath": "C:\\CTA Folders\\CTA-resume\\src\\backend\\Cta.Exercise.Core\\Cta.Exercise.Core.csproj"
               }
             }
           }
@@ -83,14 +83,14 @@
         }
       }
     },
-    "C:\\CTA Folders\\cta-csharp-exercise-lv\\src\\Cta.Exercise.Core\\Cta.Exercise.Core.csproj": {
+    "C:\\CTA Folders\\CTA-resume\\src\\backend\\Cta.Exercise.Core\\Cta.Exercise.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\CTA Folders\\cta-csharp-exercise-lv\\src\\Cta.Exercise.Core\\Cta.Exercise.Core.csproj",
+        "projectUniqueName": "C:\\CTA Folders\\CTA-resume\\src\\backend\\Cta.Exercise.Core\\Cta.Exercise.Core.csproj",
         "projectName": "Cta.Exercise.Core",
-        "projectPath": "C:\\CTA Folders\\cta-csharp-exercise-lv\\src\\Cta.Exercise.Core\\Cta.Exercise.Core.csproj",
+        "projectPath": "C:\\CTA Folders\\CTA-resume\\src\\backend\\Cta.Exercise.Core\\Cta.Exercise.Core.csproj",
         "packagesPath": "C:\\Users\\297411\\.nuget\\packages\\",
-        "outputPath": "C:\\CTA Folders\\cta-csharp-exercise-lv\\src\\Cta.Exercise.Core\\obj\\",
+        "outputPath": "C:\\CTA Folders\\CTA-resume\\src\\backend\\Cta.Exercise.Core\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
