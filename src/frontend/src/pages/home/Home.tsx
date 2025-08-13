@@ -22,12 +22,6 @@ const Home = () => {
                             that improves processes. I am always looking for new challenges and opportunities to grow as a developer.
                         </Typography>
                         <aside className="socialLinks">
-                            <a target="_blank" href="https://x.com" rel="noopener noreferrer">
-                                <img src="/twitter.png" alt="link to twitter" className="socialLink" />
-                            </a>
-                            <a target="_blank" href="https://facebook.com" rel="noopener noreferrer">
-                                <img src="/facebook.png" alt="link to facebook" className="socialLink" />
-                            </a>
                             <a target="_blank" href="https://www.linkedin.com/in/liberty-vanty/" rel="noopener noreferrer">
                                 <img src="/linkedin.png" alt="link to linkedin" className="socialLink" />
                             </a>

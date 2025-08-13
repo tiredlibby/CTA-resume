@@ -7,6 +7,29 @@
     height: 100%;
 }
 
+.container.dark {
+    background: #181818;
+    color: #f1f1f1;
+}
+
+.container.dark .header,
+.container.dark .leftHalf,
+.container.dark .rightHalf {
+    color: #f1f1f1;
+}
+
+.container.dark .logo {
+    border: 2px solid #444;
+}
+
+.container.dark .largeImage {
+    box-shadow: 0 0 10px #222;
+}
+
+.container.dark .socialLink {
+    filter: grayscale(0%) brightness(0.8);
+}
+
 .topHalf{
     display: flex;
     justify-content: center;
