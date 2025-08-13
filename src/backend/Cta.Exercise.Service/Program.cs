@@ -29,6 +29,16 @@ builder.Services.AddHttpClient<IRandomFactServiceClient, RandomFactServiceClient
     client.BaseAddress = new Uri("https://uselessfacts.jsph.pl/");
 });
 
+builder.Services.AddCors(options =>
+{
+    options.AddDefaultPolicy(
+        policy =>
+        {
+            policy.WithOrigins("http://localhost:5173", "https://red-flower-0c7a6a50f.1.azurestaticapps.net")
+                  .AllowAnyHeader()
+                  .AllowAnyMethod();
+        });
+});
 
 var app = builder.Build();
 
