@@ -10,7 +10,7 @@ const Home = () => {
                     <div className="leftHalf">
                         <span className="header">
                             <img src="/profphoto.jpg" className="logo" aria-hidden="true" />
-                            <Typography component='h1' variant='h4' data-testid='home-heading'>Cara Maxson</Typography>
+                            <Typography component='h1' variant='h4' data-testid='home-heading'>Liberty Vanty</Typography>
                         </span>
                         <Typography component='h2' variant='h6' color='textSecondary' sx={{ mt: 1.5 }} data-testid='landing-subheading'>
                             2025 CTA Student
