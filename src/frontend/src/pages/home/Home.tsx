@@ -9,7 +9,7 @@ const Home = () => {
                 <div className="topHalf">
                     <div className="leftHalf">
                         <span className="header">
-                            <img src="/Graduation Photo.jpg" className="logo" aria-hidden="true" />
+                            <img src="/profphoto.jpg" className="logo" aria-hidden="true" />
                             <Typography component='h1' variant='h4' data-testid='home-heading'>Cara Maxson</Typography>
                         </span>
                         <Typography component='h2' variant='h6' color='textSecondary' sx={{ mt: 1.5 }} data-testid='landing-subheading'>
@@ -35,7 +35,7 @@ const Home = () => {
                     </div>
                     <div className="rightHalf">
                         <figure>
-                            <img src="/college-graduate.png" className="largeImage" aria-hidden="true" />
+                            <img src="/Graduation Photo.jpg" className="largeImage" aria-hidden="true" />
                         </figure>
                     </div>
                 </div>
