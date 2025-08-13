@@ -1,0 +1,12 @@
+C:\CTA Folders\cta-csharp-exercise-lv\src\Cta.Exercise.Core\bin\Release\net8.0\Cta.Exercise.Core.deps.json
+C:\CTA Folders\cta-csharp-exercise-lv\src\Cta.Exercise.Core\bin\Release\net8.0\Cta.Exercise.Core.dll
+C:\CTA Folders\cta-csharp-exercise-lv\src\Cta.Exercise.Core\bin\Release\net8.0\Cta.Exercise.Core.pdb
+C:\CTA Folders\cta-csharp-exercise-lv\src\Cta.Exercise.Core\obj\Release\net8.0\Cta.Exercise.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\CTA Folders\cta-csharp-exercise-lv\src\Cta.Exercise.Core\obj\Release\net8.0\Cta.Exercise.Core.AssemblyInfoInputs.cache
+C:\CTA Folders\cta-csharp-exercise-lv\src\Cta.Exercise.Core\obj\Release\net8.0\Cta.Exercise.Core.AssemblyInfo.cs
+C:\CTA Folders\cta-csharp-exercise-lv\src\Cta.Exercise.Core\obj\Release\net8.0\Cta.Exercise.Core.csproj.CoreCompileInputs.cache
+C:\CTA Folders\cta-csharp-exercise-lv\src\Cta.Exercise.Core\obj\Release\net8.0\Cta.Exercise.Core.sourcelink.json
+C:\CTA Folders\cta-csharp-exercise-lv\src\Cta.Exercise.Core\obj\Release\net8.0\Cta.Exercise.Core.dll
+C:\CTA Folders\cta-csharp-exercise-lv\src\Cta.Exercise.Core\obj\Release\net8.0\refint\Cta.Exercise.Core.dll
+C:\CTA Folders\cta-csharp-exercise-lv\src\Cta.Exercise.Core\obj\Release\net8.0\Cta.Exercise.Core.pdb
+C:\CTA Folders\cta-csharp-exercise-lv\src\Cta.Exercise.Core\obj\Release\net8.0\ref\Cta.Exercise.Core.dll
