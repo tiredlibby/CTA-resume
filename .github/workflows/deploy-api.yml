@@ -46,15 +46,6 @@ jobs:
     - name: Run tests
       run: dotnet test ${{ env.SOLUTION_PATH }} --configuration Release --no-build --verbosity normal --logger trx --results-directory ./test-results
       continue-on-error: false  # Fail deployment if tests fail
-      
-    - name: Publish test results
-      uses: dorny/test-reporter@v1
-      # Run only if test results exist
-      if: always() && hashFiles('./test-results/*.trx') != ''
-      with:
-        name: .NET Tests
-        path: './test-results/*.trx'
-        reporter: dotnet-trx
     
     # Bundle the application for deployment
     - name: Publish application
